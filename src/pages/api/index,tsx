@@ -1,0 +1,8 @@
+// src/services/api/index.ts
+
+import axios from 'axios';
+
+export const getProductsBySubcategory = async (subcategoryId: string) => {
+  const response = await axios.get(`/api/products?subcategoryId=${subcategoryId}`);
+  return response.data;
+};

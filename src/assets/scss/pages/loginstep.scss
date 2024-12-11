@@ -1,0 +1,121 @@
+  @import './team.scss';
+  
+  .login_modal{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  background-color:white;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: none;
+  padding: 30px 20px 30px 25px;
+  width: 450px;
+  height: auto;  
+}
+
+  .loginstep{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  h1{
+      font-family: var(--font-family);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      padding-top: 10px;
+      margin-top: 2px;
+    }
+
+    img{
+        padding-top: 5px;
+    }
+  
+  &_close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  
+  &_input{
+    margin-top: 15px;
+    flex: 1;
+    height: 35px;
+    border: 1px solid rgba(142, 142, 142, 1); 
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  &_inner_input {
+    font-family: Poppins;
+    font-size: 12px;
+    border: none;
+    width: 100%;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(142, 142, 142, 1);
+    padding-left: 5px;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+    .loginstep_warning{
+    color: red;
+    margin-top: 15px;
+    }
+ 
+  .btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 30px;
+    padding: 10px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 30px;
+    height: 50px;
+  }
+  
+  &_conditions{
+    padding-top: 15px;
+    font-size: 14px;
+    text-align: center;  
+    color: rgba(142, 142, 142, 1);
+  }
+
+  .signup_process{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .signup_link{
+    color:rgba(74, 121, 255, 1);
+    text-decoration: underline;
+    cursor: pointer;;
+  }
+}
+
+ .login_success{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   
+    h1{
+        font-family:var(--font-family);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+ } 
+
+
+

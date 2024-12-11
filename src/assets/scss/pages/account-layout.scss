@@ -1,0 +1,129 @@
+@import "./team.scss";
+
+
+.my-account {
+  border-right: 1px solid #8e8e8e;
+  // border-top-right-radius: 7px;
+  border-bottom: 1px solid #8e8e8e;
+  height: 70vh;
+  // border-bottom-right-radius: 8px;
+
+  &-heading {
+    padding: 0.55rem .7rem 0.55rem 1.5rem;
+    border-bottom: 1px solid #8e8e8e;
+  }
+  &-body {
+    margin: 0rem 0rem 0rem 1.5rem;
+  }
+}
+.account-layout {
+  margin: 120px 35px 0;
+  .fonts {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: var(--primary-color);
+  }
+
+  .fontes{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: var(--primary-color);
+  }
+  &-head {
+    display: flex;
+    align-items: center;
+
+    &-btn {
+      
+      padding: 0;
+      padding-top: 4px;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    img {
+      width: 25px;
+      height: 17.5px;
+      margin-right: 10px;
+    }
+    p {
+      font-family: var(--font-family);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 36px;
+      text-align: left;
+    }
+  }
+
+  &_body {
+    display: flex;
+
+    margin: 1rem 0;
+  }
+
+  &_navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #8e8e8e;
+    // border-radius: 7px;
+    width: 18%;
+
+    &-btn {
+      padding: 0.6rem 1.6rem;
+      border: none;
+      background-color: transparent;
+      border-top: 1px solid #8e8e8e;
+    }
+
+    &-head {
+      display: flex;
+      flex-direction: column;
+
+      &-link {
+        display: flex;
+        border-bottom: 1px solid #8e8e8e;
+        align-items: center;
+
+        .link {
+          text-decoration: none;
+           color: var(--primary-color);
+          font-weight: 400;
+          padding: 0.55rem 1rem;
+        }
+        .active {
+          color: var(--primary-color);
+          font-weight: 600;
+        }
+        .active-link {
+          width: 5px;
+          height: 35px;
+          border-radius: 10px;
+          margin-left: 0.3rem;
+          background-color: var(--primary-color);
+        }
+        .inactive-link {
+          background-color: transparent;
+          width: 5px;
+          height: 35px;
+          border-radius: 10px;
+          margin-left: 0.3rem;
+        }
+      }
+    }
+  }
+
+  &_content {
+    border-top: 1px solid #8e8e8e;
+    // border-top-right-radius: 7px;
+    width: 83%;
+    // margin-left: -0.5rem;
+  }
+}

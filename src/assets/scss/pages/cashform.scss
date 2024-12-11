@@ -1,0 +1,60 @@
+@import './team.scss';
+@import './component.scss';
+
+
+.cashform{
+    border: 1px solid rgba(142, 142, 142, 1);
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0px;
+    width: 550px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: -10px;
+
+
+    &_details{
+        border: 1px solid rgba(142, 142, 142, 1);
+        border-radius: 5px;
+        margin: 0px 30px;
+        padding: 20px 10px 0px 10px;
+
+        h1{
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 36px;
+        }
+    }
+
+    &_checkinfo{
+        display: flex;
+        padding-top: 15px;
+        align-items: center;
+        cursor: pointer;
+
+        path{
+            fill:var(--primary-color);
+        }
+
+        p{
+            padding-left: 10px;
+            font-family:var(--font-family);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            color: rgba(177, 177, 177, 1);
+        }
+    }
+    
+    &_service{
+        padding:5px 0px 20px 0px;
+        font-family:var(--font-family);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgba(142, 142, 142, 1);
+    }
+}

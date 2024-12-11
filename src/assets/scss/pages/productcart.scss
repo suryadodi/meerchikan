@@ -1,0 +1,111 @@
+.cart_product{
+    display: flex;
+    border: 1px solid #D3D3D3;
+    position: relative;
+    width: 100%;
+    height: 174px;
+    &-cancel{
+        width: 26px;
+        height: 26px;
+        background: var(--primary-color);
+        position: absolute;
+        right: -12px;
+        top: -12px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 20px;
+        color:var(--secondary-color);
+        cursor: pointer;
+    }
+
+    &-img{
+        width: 50%;
+    }
+        &-coke{
+            width:85%;
+            height: 100%;  
+        }
+        &-body{
+            padding : 10px 10px 0px 10px;
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        } 
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+         }
+         &-leftcontent{
+             font-size: 20px;
+             font-weight: 600;
+             font-family: var(--font-family);
+             line-height: 25.06px;
+             
+            
+         }
+         &-rightcontent{
+             font-size: 16px;
+             font-weight: 500;
+             padding-top: 10px;
+         }
+         &-leftoffer{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: var(--font-family);
+            color: var(--primary-color);
+         }
+         &-rightoffer{
+             font-size: 16px;
+             font-weight: 600;
+             text-align: end;
+             }
+         &-saveprice{
+             font-size: 14px;
+             font-weight: 400;
+             color: var(--primary-color);
+             // padding-right:5px ;
+         }
+         &-price{
+             font-size: 14px;
+             font-weight: 400;
+         }
+         &-offerprice{
+             font-family: Poppins;
+             font-size: 16px;
+             font-weight: 600;
+             color: var(--primary-color);
+             margin-top: 5px;
+         }
+         &-totalprice{
+             text-decoration: line-through;
+             font-size: 16px;
+             font-weight: 400;
+             color: #8E8E8E;
+             margin-right: 10px;
+         }
+         &-offer{
+            margin-left: 10px;
+         }
+         &-clickaction{
+            background: #FFFFFF;
+            background-color: var(--primary-color);
+             margin-top: 5px;
+             cursor: pointer; 
+             width: 75%;
+
+         }      
+         &-clickcount{
+             color: var(--secondary-color);
+             font-size: 16px;
+             padding: 10px 20px;
+         }
+         &-countbutton{
+            border:none;
+            background-color: var(--primary-color);
+            color:var(--secondary-color);
+            font-size: 20px;
+            margin:0px 22px ; 
+         }
+}
+    

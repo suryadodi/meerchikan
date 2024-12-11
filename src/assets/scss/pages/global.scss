@@ -1,0 +1,29 @@
+@import "./team.scss";
+// @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
+/* Define the font-family variable in :root */
+// @import "@fontsource/source-serif-pro"; // Defaults to weight 400
+// @import "@fontsource/source-serif-pro/400.css"; // Specify weight
+// @import "@fontsource/source-serif-pro/400-italic.css"; 
+:root {
+  --font-family: "Source Serif 4", serif;
+  --primary-color: #343434;
+  --secondary-color:#FFFFFF;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  
+}
+.container{
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 100%;
+  }

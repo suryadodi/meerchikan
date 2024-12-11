@@ -1,0 +1,344 @@
+@import "./team.scss";
+
+.categories {
+    .category{
+        margin-top: 0 !important;
+     }
+}
+.product-cards{
+    width: 260px;
+}
+.product-page{
+    margin: 0 35px;
+}
+
+.grocery {
+    margin: 120px 0px 0px 0px;
+  
+    &_title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    &_types {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    &_drinks {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    &_options {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 30.7px;
+      
+    }
+  
+    &_option {
+      font-weight: 400;
+      font-size: 24px; 
+      font-family: "Source Serif Pro", serif; 
+      line-height: 30.07px; 
+      color: #343434;
+  
+      cursor: pointer;
+  
+      &:hover {
+        cursor: pointer;
+      }
+  
+      &.active {
+        text-decoration: underline;
+        text-underline-offset: 9px; // Set the distance for underline
+      }
+    }
+  
+    .line-separator {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 10px 12px 10px 0px;
+    }
+  
+    &_item {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    &_item > p {
+      margin: 0px 32px 0px 0px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 1);
+      cursor: pointer;
+    }
+  }
+  
+  
+// .active {
+//     border-bottom: 3px solid rgba(84, 178, 38, 1);
+//     font-weight: bold;
+//   }
+  
+// Category
+.grocery_category {
+    display: flex;
+    margin: 30px 0px 20px 0;
+    .grocery{
+        margin: 0 10px;
+        &-item{
+            border-bottom: 1px solid black;
+            .grocery-text{ 
+            padding: 20px 0;
+            font-weight: 600;
+            color:  #8E8E8E; // Change the font color when active
+
+            &.active {
+                color: #343434;
+                font-weight: bold; // Optional: make it bold or apply other styles
+              }
+            }
+           
+        }
+        :nth-last-child(1){
+            border: none;
+        }
+    }
+}
+
+.category {
+    cursor: pointer;
+    &-cancel {
+        height: 15px;
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 15px;
+
+    }
+
+    &_title {
+        border: 1px solid #8E8E8E;
+        width: 320px;
+        height: auto;       
+    }
+
+    &_body {
+        color: rgba(0, 0, 0, 1);
+        border-bottom: 1px solid #8E8E8E;
+        font-family: var(--font-family);
+    }
+
+    &-content {
+       color :#343434;
+        padding: 10px 15px 10px 15px;
+        font-family: var(--font-family);
+font-size: 20px;
+font-weight: 600;
+line-height: 40.1px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+    }
+
+
+    &-dropdown {
+        padding: 5px 0px 0px 0px;
+        border: none;
+
+        .MuiTypography-root {
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-weight: 600;
+            color:#8E8E8E;
+            line-height: 30.07px;
+
+        }
+    }
+
+    &-menu {
+        cursor: pointer;
+        .MuiTypography-root {
+            font-family: var(--font-family);
+            font-size: 14px;
+            font-weight: 400;
+            
+            color: #8E8E8E;
+
+        }
+    }
+
+    // &-line {
+    //     width: 300px;
+    //     margin: 0px 16px 0px 16px;
+    // }
+}
+
+//Card 
+.card-container {
+    display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 30px;
+}
+
+button.Mui-selected.MuiPaginationItem-page.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+//Filter
+.filter {
+    border: 1px solid #8E8E8E;
+    width: 320px;
+    height: auto;
+    margin-top: 15px;
+    cursor: pointer;
+    &-top {
+        display: flex;
+        justify-content: space-between;
+       padding: 22px 0px 22px 15px;
+    }
+    &-head{
+        border-bottom: 1px solid var(--primary-color);
+    }
+    &-cancel {
+        width: 10px;
+        height: 10px;
+        float: right;
+        position: relative;
+        top: 10px;
+        right: 20px;
+    }
+
+    &-content {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5px;
+    }
+
+    &-clear {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(66, 111, 239, 1);
+        padding-top: 10px;
+    }
+
+    &_percentage {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 30px 4px 5px;
+    }
+
+    &-innerbox {
+        margin: 0px 10px 5px 0px;
+    }
+
+    &-offer {
+        width: auto;
+        height: 34px;
+        border-radius: 4px 0px 0px 0px;
+        background: #E0E0E0;
+        border: 1px 0px 0px 0px;
+        margin: 0px 0px 10px 10px;
+        padding: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-cut {
+        font-size: 20px;
+        padding: 12px 10px 5px 10px;
+        position: relative;
+        bottom: 8px;
+        padding: 12px 10px 5px 10px;
+        opacity: 50%;
+    }
+
+    &-inner_content {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 10px 5px 0px;
+
+    }
+
+    &-star {
+        padding: 0px 4px 0px 4px;
+        width: 13px;
+        height: 10px;
+    }
+
+    &-dropdown {
+        .MuiTypography-root {
+            font-family: var(--font-family);
+            font-size: 18px;
+            font-weight: 600;
+            color: #8E8E8E;
+
+        }
+    }
+
+    &-clear_content {
+        color: #8E8E8E;
+        display: flex;
+    }
+
+    &-clear_cut {
+        font-size: 20px;
+        color: black;
+        border-radius: 2px;
+        background-color: #8E8E8E;
+        width: auto;
+        line-height: 16px;
+        height: 15px;
+        opacity: 35%;
+        margin: 0px 15px;
+        position: relative;
+        top: 5px;
+    }
+
+    &-check_content {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &-check {
+        margin: 0px 5px;
+    }
+}
+.card\.pagination{
+   display: flex;
+   justify-content: center;
+}
+.category_item{
+   
+    margin-bottom: 10px;
+}
+
+.selected {
+    .MuiTypography-root{
+    color: #343434;
+    font-weight: bold; 
+    }
+
+  }
+
+  .selectedSub {
+    .MuiTypography-root{
+    font-weight: bold; 
+    }
+    .Mui-checked{
+            color: #343434 !important;
+    }
+
+  }
+  

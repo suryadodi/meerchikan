@@ -1,0 +1,143 @@
+// Card
+
+.card-section{
+  display: flex;
+
+}
+.card {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+
+  &-image {
+    width: 100%;
+    // height: 350px;
+  }
+  // &-subhead{
+  //   margin-bottom: 25px;
+  // }
+  // &-headimage{
+  //   position: relative;
+  //   top: -230px;
+  //   left: -110px;
+  // }
+  &-body {
+    padding: 10px 10px 15px 10px;
+    height: 85px;
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+  &-offer {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.06px;
+    text-align: left;
+    color: var(--primary-color);
+
+    &-price {
+      font-weight: 600;
+    }
+  }
+  .selling_price {
+    color: #8e8e8e;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    margin-left: 10px;
+  }
+  &-title {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.07px;
+    text-align: left;
+  }
+  &-headcontent {
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 40px;
+  }
+  &-leftcontent {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+  &-rightcontent {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+  }
+  &-rightcontent > span {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    bottom: -4px;
+  }
+  &-price {
+    padding: 0px 3px 0px 3px;
+    text-decoration: line-through;
+    color: #8e8e8e;
+  }
+  .btn {
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  &-action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px 0;
+  }
+  &-menu {
+    font-family: var(--font-family);
+  }
+  &-menu:hover {
+    background-color: #e6ffda;
+  }
+  div#demo-simple-select {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    border: 1px solid #8e8e8e;
+  }
+}
+
+.card-btntext {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.06px;
+  text-align: left;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+.card-clickaction {
+  background: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+    padding: 5px 10px; 
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-clickcount {
+  color: var(--secondary-color);
+  font-size: 22px;
+  
+}
+.card-countbutton {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 30px;
+  cursor: pointer;
+}
